@@ -37,30 +37,27 @@ collections:
         name: "sections"
         widget: "list"
         types:
-          - label: Section
-            name: section
-            widget: object
-            fields:
-              - label: Title
-                name: title
-                widget: string
-              - label: Theme
-                name: theme
-                widget: select
-                options:
-                  - Light
-                  - Dark
-              - label: Image
-                name: image
-                widget: image
-                required: false
-              - label: "Body"
-                name: "body"
-                widget: "text"
-              - label: Align Body
-                name: align
-                widget: select
-                options:
-                  - Left
-                  - Center
-                  - Right
+          - label: Theme
+            name: theme
+            widget: select
+            options:
+              - Light
+              - Dark
+          - label: Columns
+            name: columns
+            widget: list
+            types:
+              - label: Section
+                name: section
+                widget: object
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Image
+                    name: image
+                    widget: image
+                    required: false
+                  - label: "Body"
+                    name: "body"
+                    widget: "text"
