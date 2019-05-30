@@ -2,8 +2,9 @@
 layout: layouts/base.njk
 section: page
 ---
-<header class="page__header">
-    <h1>{{ title }}</h1>
+<header class="page__header" style="background-image: url({{image}});">
+    <h1 class="page__title">{{ title }}</h1>
 </header>
-
-{{ layoutContent | safe }}
+<main class="page__content">
+    {{ layoutContent | safe }}
+</main>
