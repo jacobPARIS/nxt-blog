@@ -6,5 +6,25 @@ section: page
     <h1 class="page__title">{{ title }}</h1>
 </header>
 <main class="page__content">
+    {% if sections %}
+        {% for section in sections %}
+            <section 
+                class="section {{section.theme}}"
+            {% if section.image %}
+                style="background-image: url({{section.image}});"
+            {% endif %}
+            >
+                {% if section.image %}
+                <div class="section__image">
+                    <img src="{{section.image}}" class="section__image" />
+                </div>
+                {% endif %}
+                <div class="section__content section__content--align-{{section.align}}">
+                    <h2 class="section__title">{{section.title}}</h2>
+                    {{section.body}}
+                </div>
+            </section>
+        {% endfor %}
+    {% endif %}
     {{ layoutContent | safe }}
 </main>

@@ -4,11 +4,10 @@ $lightest: #f8f5f4;
 $accent: #f38d1f;
 
 html {
-    font-family: 'Merriweather', serif;
+    font-family: 'Catamaran', sans-serif;
 }
 
 h1, .nav {
-    font-family: 'Catamaran', sans-serif;
     margin: 0;
 }
 
@@ -63,8 +62,70 @@ a {
     &__title {
         font-size: 9vw;
     }
-    &__content {
-        padding: 2rem;
+}
+
+.section {
+    @media screen and (min-width: 750px) {
+        padding: 4rem 2rem;
+    }
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 0;
+    overflow: hidden;
+
+    &.Light {
+        background-color: $lightest;
         color: $dark;
+    }
+    &.Dark {
+        background-color: $darkest;
+        color: $lightest;
+        
+    }
+    &[style]::before {
+        @media screen and (min-width: 750px) {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 120%;
+            top: -30%;
+            left: -10%;
+            background-image: inherit;
+            background-repeat: no-repeat;
+            background-position: left top;
+            transform: rotate(-10deg);
+        }
+    }
+    &__title {
+
+    }
+    &__content {
+        max-width: 400px;
+        position: relative;
+        padding: 1rem;
+        background: inherit;
+        border-radius: 1rem;
+        &--align {
+            &-Left {
+                margin-right: auto;
+            }
+            &-Center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &-Right {
+                margin-left: auto;
+            }
+        }
+    }
+    &__image {
+        overflow-y: hidden;
+        max-height: 400px;
+        @media screen and (min-width: 750px) {
+            display: none;
+        }
+        img {
+            width: 100%;
+        }
     }
 }

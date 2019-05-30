@@ -33,8 +33,8 @@ collections:
       - { label: "Permalink", name: "permalink", widget: "string" }
       - { label: "Navigation Title", name: "navtitle", widget: "string" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "nav" }
-      - label: "Page"
-        name: "page"
+      - label: "Sections"
+        name: "sections"
         widget: "list"
         types:
           - label: Section
@@ -48,17 +48,19 @@ collections:
                 name: theme
                 widget: select
                 options:
-                  - light
-                  - right
+                  - Light
+                  - Dark
               - label: Image
                 name: image
                 widget: image
-              - label: Align Image
+                required: false
+              - label: "Body"
+                name: "body"
+                widget: "text"
+              - label: Align Body
                 name: align
                 widget: select
                 options:
-                  - left
-                  - right
-              - label: "Body"
-                name: "body"
-                widget: "markdown"
+                  - Left
+                  - Center
+                  - Right

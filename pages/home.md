@@ -6,9 +6,9 @@ permalink: /
 navtitle: Home
 tags:
   - nav
-page:
-  - align: left
-    body: >-
+sections:
+  - align: Center
+    body: >
       We rebuilt the roaster from the ground up to make you amazing coffee —
       specifically designed for those of you who want the best.
 
@@ -20,12 +20,11 @@ page:
 
       With coffee so aromatic, so delicious, and so fresh, you'll never buy
       anywhere else again.
-    theme: light
+    theme: Light
     title: Not just another coffee roaster
-    image: /static/img/logo.png
     type: section
-  - align: left
-    body: >-
+  - align: Right
+    body: >
       This is our "mantra" because it defines how we treat the coffee beans. We
       roast the quantities that have been requested which are nearly always
       delivered on roasting day. We do not advocate that the coffee be consumed
@@ -38,7 +37,7 @@ page:
       the contents. For removing small amounts of beans use a small scoop or
       measuring spoon while keeping the bag upright.
     image: /static/img/nxt-logo-on-roaster.jpg
-    theme: light
+    theme: Dark
     title: 'Freshness, Energy, & Low Emissions'
     type: section
 ---
