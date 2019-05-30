@@ -5,10 +5,10 @@
 
 	<body>
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
+		<header class="header">
+			<a href="{{ '/' | url }}">
+				<img class="header__img" src="/_includes/assets/img/logo.jpg" alt="{{ metadata.title }}" />
+			</a>
 			{% include "components/nav.njk" %}
 		</header>
 
