@@ -1,20 +1,15 @@
 ---
-layout: layouts/home.njk
-title: Home
-date: 2016-01-01T00:00:00.000Z
+title: Freshly Roasted For Optimal Taste
+date: 2019-05-29T06:00:00.000Z
 permalink: /
 navtitle: Home
 tags:
   - nav
 ---
-# Welcome
+## Not just another coffee roaster
 
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
+We rebuilt the roaster from the ground up to make you amazing coffee — specifically designed for those of you who want the best. 
 
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
+Our roasters bathe the coffee beans in a jet of superheated steam while vacuuming away the smoke. Fresh air roasting means fresh tasting coffee, and that's a guarantee we've built our name around.
 
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on Github.
-
-Or click the button below to deploy your own copy of this project to Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+With coffee so aromatic, so delicious, and so fresh, you'll never buy anywhere else again.
