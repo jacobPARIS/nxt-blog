@@ -1,5 +1,6 @@
 ---
 title: Freshly Roasted For Optimal Taste
+image: /static/img/andrii-podilnyk-1060051-unsplash.jpg
 date: 2019-05-29T06:00:00.000Z
 permalink: /
 navtitle: Home
