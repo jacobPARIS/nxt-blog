@@ -105,3 +105,9 @@ a {
         }
     }
 }
+
+.blog {
+    &__post {
+        padding: 2rem;
+    }
+}
