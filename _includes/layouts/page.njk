@@ -8,20 +8,27 @@ section: page
 <main class="page__content">
     {% if sections %}
         {% for section in sections %}
-            <section 
-                class="section {{section.theme}}"
-            {% if section.image %}
-                style="background-image: url({{section.image}});"
-            {% endif %}
-            >
-                {% if section.image %}
-                <div class="section__image">
-                    <img src="{{section.image}}" class="section__image" />
-                </div>
-                {% endif %}
-                <div class="section__content section__content--align-{{section.align}}">
+            <section class="section {{section.theme}}">
+                {% if section.title %}
                     <h2 class="section__title">{{section.title}}</h2>
-                    {{section.body}}
+                {% endif %}
+
+                <div class="section__content">
+                    {% if section.columns %}
+                        {% for column in section.columns %}
+                            {% if column.image %}
+                                <div class="section__column section__image">
+                                    <img src="{{column.image}}" />
+                                </div>
+                            {% endif %}
+
+                            {% if column.text %}
+                                <div class="section__column section__text">
+                                    {{column.text}}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </section>
         {% endfor %}
