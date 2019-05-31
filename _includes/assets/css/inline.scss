@@ -62,6 +62,12 @@ a {
     &__title {
         font-size: 9vw;
     }
+    &__footer {
+        background-color: $darkest;
+        color: $accent;
+        padding: 2rem;
+        text-align: center;
+    }
 }
 
 .section {
